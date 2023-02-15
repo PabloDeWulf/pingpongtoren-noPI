@@ -22,6 +22,7 @@
 void main(void) {
     // initialize the device
     SYSTEM_Initialize();
+    
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
@@ -47,6 +48,10 @@ void main(void) {
     printf("Hello :) \r\n");
 
     while (1) {
+        //LED_SetHigh(); //LED ON
+        //__delay_ms(1000); //1second delay
+        //LED_SetLow(); // LED OFF
+        //__delay_ms(1000); //1second delay
 
         uartHandler();
         
